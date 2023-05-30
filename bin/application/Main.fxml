@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <ImageView fitHeight="471.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Pictures/Bar%20Big.png" />
+         </image>
+         <effect>
+            <Blend opacity="0.0">
+               <topInput>
+                  <Shadow>
+                     <input>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </input>
+                  </Shadow>
+               </topInput>
+            </Blend>
+         </effect>
+      </ImageView>
+      <ButtonBar layoutX="80.0" layoutY="19.0" prefHeight="109.0" prefWidth="932.0">
+        <buttons>
+            <Button mnemonicParsing="false" onAction="#Home" prefHeight="27.0" prefWidth="236.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" text="Home" textFill="WHITE" underline="true">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#Menu" style="-fx-background-color: transparent; -fx-border-color: transparent;" text="Menus" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#Room" style="-fx-background-color: transparent; -fx-border-color: transparent;" text="Rooms" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#Facility" style="-fx-background-color: transparent; -fx-border-color: transparent;" text="Facilities" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font></Button>
+        </buttons>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ButtonBar>
+      <Button layoutX="1580.0" layoutY="41.0" mnemonicParsing="false" onAction="#CheckIn" style="-fx-background-color: transparent; -fx-border-color: transparent;" text="Check in / Book Now" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Line endX="1627.0" layoutX="235.0" layoutY="113.0" startX="-144.0" stroke="WHITE" strokeWidth="5.0">
+         <effect>
+            <DropShadow />
+         </effect></Line>
+      <Text fill="WHITE" layoutX="654.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Outdoor Oriented Hotel ">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Text>
+      <Pane layoutX="59.0" layoutY="550.0" prefHeight="483.0" prefWidth="254.0" style="-fx-border-color: #44625E; -fx-border-radius: 30; -fx-border-width: 4;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="27.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Pictures/Outdoor%201.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="50.0" layoutY="200.0" prefHeight="62.0" prefWidth="174.0" text="Outdoor 1">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="250.0" prefHeight="25.0" prefWidth="82.0" text="Basic Room">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="325.0" prefHeight="62.0" prefWidth="174.0" text="Rp. 2,000,000.00">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="74.0" layoutY="396.0" mnemonicParsing="false" onAction="#CheckIn" prefHeight="54.0" prefWidth="107.0" style="-fx-border-color: #44625E; -fx-border-radius: 50; -fx-border-width: 4; -fx-background-color: #44625E; -fx-background-radius: 50;" text="Book Now" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="350.0" layoutY="550.0" prefHeight="483.0" prefWidth="254.0" style="-fx-border-color: #44625E; -fx-border-radius: 30; -fx-border-width: 4;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="27.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Pictures/Outdoor%202.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="50.0" layoutY="200.0" prefHeight="62.0" prefWidth="174.0" text="Outdoor 2">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="250.0" prefHeight="25.0" prefWidth="121.0" text="Premium Room">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="325.0" prefHeight="62.0" prefWidth="174.0" text="Rp. 4,000,000.00">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="74.0" layoutY="396.0" mnemonicParsing="false" onAction="#CheckIn" prefHeight="54.0" prefWidth="107.0" style="-fx-border-color: #44625E; -fx-border-radius: 50; -fx-border-width: 4; -fx-background-color: #44625E; -fx-background-radius: 50;" text="Book Now" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="640.0" layoutY="550.0" prefHeight="483.0" prefWidth="254.0" style="-fx-border-color: #44625E; -fx-border-radius: 30; -fx-border-width: 4;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="27.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Pictures/Outdoor%203.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="50.0" layoutY="200.0" prefHeight="62.0" prefWidth="174.0" text="Outdoor 3">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="250.0" prefHeight="25.0" prefWidth="121.0" text="Premium+ Room">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="325.0" prefHeight="62.0" prefWidth="174.0" text="Rp. 6,000,000.00">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="74.0" layoutY="396.0" mnemonicParsing="false" onAction="#CheckIn" prefHeight="54.0" prefWidth="107.0" style="-fx-border-color: #44625E; -fx-border-radius: 50; -fx-border-width: 4; -fx-background-color: #44625E; -fx-background-radius: 50;" text="Book Now" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Text layoutX="317.0" layoutY="515.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Available Rooms">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Text>
+      <Pane layoutX="976.0" layoutY="550.0" prefHeight="177.0" prefWidth="888.0" style="-fx-border-color: #44625E; -fx-border-radius: 30; -fx-border-width: 4;" />
+      <Pane layoutX="976.0" layoutY="817.0" prefHeight="216.0" prefWidth="888.0" style="-fx-border-color: #44625E; -fx-border-radius: 30; -fx-border-width: 4;" />
+      <Text layoutX="1323.0" layoutY="515.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Our Menu" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Text>
+      <Text layoutX="1296.0" layoutY="787.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Our Facilities" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

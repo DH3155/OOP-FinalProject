@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #BDCFFF;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1">
+   <children>
+      <Line endX="819.0" layoutX="669.0" layoutY="166.0" startX="-318.0" />
+      <Text layoutX="354.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Name">
+         <font>
+            <Font size="59.0" />
+         </font>
+      </Text>
+      <Text layoutX="354.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Type           :">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <Text layoutX="892.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer ID">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <Text layoutX="892.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Number">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <Text layoutX="892.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Charge">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <Text layoutX="354.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Breakfast Coupon :">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <Text layoutX="354.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check In     :">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="354.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check Out  :">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="524.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="...">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="524.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="...">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Pane layoutX="89.0" layoutY="480.0" prefHeight="450.0" prefWidth="846.0" style="-fx-background-color: #D7E1FF; -fx-background-radius: 25;">
+         <children>
+            <Text layoutX="337.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Our Menu">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="1000.0" layoutY="480.0" prefHeight="450.0" prefWidth="846.0" style="-fx-background-color: #D7E1FF; -fx-background-radius: 25;">
+         <children>
+            <Text layoutX="337.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Our Facilities">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Text layoutX="630.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="...">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <Text layoutX="1116.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="...">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <Text layoutX="1116.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="...">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <Text layoutX="1116.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="...">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <Text layoutX="630.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="...">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
