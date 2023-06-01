@@ -150,15 +150,14 @@ public class BookingController implements Initializable{
 		Name = NameText.getText();
 		ID = IDNum.getText();
 		
-		
-		if(Name == null && Name.contains("#")) {
-			System.out.println("Cannot Contain #");
-//			Exception
+		if(Name == null || Name.contains("#")) {
+			StatusLabel.setVisible(true);
+			StatusLabel.setText("Invalid Name");
 			return;
 		}
-		if(ID == null && ID.contains("#")) {
-			System.out.println("Cannot Contain #");
-//			Exception
+		if(ID == null || ID.contains("#")) {
+			StatusLabel.setVisible(true);
+			StatusLabel.setText("Invalid ID");
 			return;
 		}
 //		
@@ -180,6 +179,8 @@ public class BookingController implements Initializable{
 		
 		System.out.println(price);
 		
+		StatusLabel.setVisible(true);
+		StatusLabel.setText("Customer ID (CID): " + BC.CID);
 //		BC = CustomerIdentification(CID, Name, DOB, CheckIn, CheckOut, ID, Room, price);
 		
 		UpdateCustomerFile(BC);
