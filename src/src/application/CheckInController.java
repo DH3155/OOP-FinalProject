@@ -14,6 +14,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.Node;
 import javafx.scene.Parent;
@@ -28,6 +29,8 @@ public class CheckInController {
 	private TextField CID;
 	@FXML
 	private TextField NIK;
+	@FXML
+	private Label StatusLabel;
 
 	
 	public void SetActiveCustomerFile(CustomerIdentification C, int TotalPrice) {
@@ -154,7 +157,8 @@ public class CheckInController {
 			stage.setScene(scene);
 			stage.show();
 		}else {
-			System.out.println("Credentials Are invalid");
+			StatusLabel.setVisible(true);
+			StatusLabel.setText("Credentials Are Invalid");
 		}
 		
 	}
