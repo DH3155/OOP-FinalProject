@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0">
+         <image>
+            <Image url="@../../../Pictures/Bar%20Small.png" />
+         </image></ImageView>
+      <ButtonBar layoutX="80.0" layoutY="19.0" prefHeight="109.0" prefWidth="932.0">
+         <buttons>
+            <Button mnemonicParsing="false" onAction="#Home" prefHeight="27.0" prefWidth="236.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" text="Home" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#Menu" style="-fx-background-color: transparent; -fx-border-color: transparent;" text="Menus" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#Room" style="-fx-background-color: transparent; -fx-border-color: transparent;" text="Rooms" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#Facility" style="-fx-background-color: transparent; -fx-border-color: transparent;" text="Facilities" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
+         </buttons>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ButtonBar>
+      <Button layoutX="1580.0" layoutY="41.0" mnemonicParsing="false" onAction="#CheckIn" style="-fx-background-color: transparent; -fx-border-color: transparent;" text="Check in / Book Now" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Line endX="1627.0" layoutX="235.0" layoutY="113.0" startX="-144.0" stroke="WHITE" strokeWidth="5.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Line>
+      <Pane layoutX="178.0" layoutY="603.0" prefHeight="700.0" prefWidth="1538.0" AnchorPane.leftAnchor="191.0" AnchorPane.topAnchor="300.0">
+         <children>
+            <Text layoutX="810.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Outdoor - 1" wrappingWidth="711.39990234375">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Text>
+            <Text layoutX="810.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Basic Room type" underline="true" wrappingWidth="711.39990234375">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Text layoutX="810.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rp. 2,000,000.00" wrappingWidth="711.39990234375">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="220.0" fitWidth="773.0" layoutX="3.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/Room%201.png" />
+               </image></ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="222.0" stroke="#44625e" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 50; -fx-arc-width: 50;" width="1538.0" />
+            <ImageView fitHeight="220.0" fitWidth="773.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/Room%202.png" />
+               </image></ImageView>
+            <Text layoutX="810.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Outdoor - 2" wrappingWidth="711.39990234375">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Text>
+            <Text layoutX="810.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Premium Room type" underline="true" wrappingWidth="711.39990234375">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Text layoutX="810.0" layoutY="435.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rp. 4,000,000.00" wrappingWidth="711.39990234375">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="222.0" layoutY="240.0" stroke="#44625e" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 50; -fx-arc-width: 50;" width="1538.0" />
+            <ImageView fitHeight="220.0" fitWidth="773.0" layoutY="480.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/Room%203.png" />
+               </image></ImageView>
+            <Text layoutX="810.0" layoutY="530.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Outdoor - 3" wrappingWidth="711.39990234375">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Text>
+            <Text layoutX="810.0" layoutY="570.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Premium+ Room type" underline="true" wrappingWidth="711.39990234375">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Text layoutX="810.0" layoutY="675.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rp. 6,000,000.00" wrappingWidth="711.39990234375">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="222.0" layoutY="480.0" stroke="#44625e" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 50; -fx-arc-width: 50;" width="1538.0" />
+            <Button layoutX="1338.0" layoutY="74.0" mnemonicParsing="false" onAction="#CheckIn" style="-fx-border-radius: 50; -fx-background-color: #44625E; -fx-background-radius: 15;" text="→" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Button>
+            <Button layoutX="1338.0" layoutY="316.0" mnemonicParsing="false" onAction="#CheckIn" style="-fx-border-radius: 50; -fx-background-color: #44625E; -fx-background-radius: 15;" text="→" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Button>
+            <Button layoutX="1338.0" layoutY="558.0" mnemonicParsing="false" onAction="#CheckIn" style="-fx-border-radius: 50; -fx-background-color: #44625E; -fx-background-radius: 15;" text="→" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Button>
+         </children></Pane>
+      <Text layoutX="894.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rooms" AnchorPane.leftAnchor="855.0" AnchorPane.rightAnchor="851.501953125" AnchorPane.topAnchor="180.0">
+         <font>
+            <Font name="System Bold" size="54.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

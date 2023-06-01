@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Pictures/Bar%20Small.png" />
+         </image></ImageView>
+      <ButtonBar layoutX="80.0" layoutY="19.0" prefHeight="109.0" prefWidth="932.0">
+         <buttons>
+            <Button mnemonicParsing="false" onAction="#Home" prefHeight="27.0" prefWidth="236.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" text="Home" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#Menu" style="-fx-background-color: transparent; -fx-border-color: transparent;" text="Menus" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#Room" style="-fx-background-color: transparent; -fx-border-color: transparent;" text="Rooms" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#Facility" style="-fx-background-color: transparent; -fx-border-color: transparent;" text="Facilities" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
+         </buttons>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ButtonBar>
+      <Button layoutX="1580.0" layoutY="41.0" mnemonicParsing="false" onAction="#CheckIn" style="-fx-background-color: transparent; -fx-border-color: transparent;" text="Check in / Book Now" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Line endX="1627.0" layoutX="235.0" layoutY="113.0" startX="-144.0" stroke="WHITE" strokeWidth="5.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Line>
+      <Text layoutX="854.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Facilities" AnchorPane.leftAnchor="850.0" AnchorPane.rightAnchor="847.57421875" AnchorPane.topAnchor="130.0">
+         <font>
+            <Font name="System Bold" size="54.0" />
+         </font>
+      </Text>
+      <Pane layoutX="191.0" layoutY="269.0" prefHeight="840.0" prefWidth="1750.0" AnchorPane.leftAnchor="85.0" AnchorPane.topAnchor="210.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="400.0" stroke="#44625e" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 30; -fx-arc-width: 30;" width="850.0" />
+            <ImageView fitHeight="300.0" fitWidth="400.0" layoutX="30.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/Swimming%20Pool.png" />
+               </image></ImageView>
+            <Text layoutX="30.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Swimming Pool">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Text>
+            <Text layoutX="450.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Swimming Pool" underline="true" wrappingWidth="397.7999267578125">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Text layoutX="450.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Free." wrappingWidth="399.39990234375">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="400.0" layoutX="900.0" stroke="#44625e" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 30; -fx-arc-width: 30;" width="850.0" />
+            <ImageView fitHeight="300.0" fitWidth="400.0" layoutX="930.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/Spa.png" />
+               </image></ImageView>
+            <Text layoutX="930.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Spa">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Text>
+            <Text layoutX="1350.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Facility details" underline="true" wrappingWidth="399.39990234375">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Text layoutX="1350.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rp. 25,000.00" wrappingWidth="402.5999755859375">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="400.0" layoutY="440.0" stroke="#44625e" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-width: 30; -fx-arc-height: 30;" width="850.0" />
+            <ImageView fitHeight="300.0" fitWidth="400.0" layoutX="30.0" layoutY="520.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/Gym.png" />
+               </image></ImageView>
+            <Text layoutX="30.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gym">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Text>
+            <Text layoutX="450.0" layoutY="550.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fitness Gym" underline="true" wrappingWidth="394.599853515625">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Text layoutX="450.0" layoutY="790.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Free" wrappingWidth="400.9998779296875">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="400.0" layoutX="900.0" layoutY="440.0" stroke="#44625e" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 30; -fx-arc-width: 30;" width="850.0" />
+            <ImageView fitHeight="300.0" fitWidth="400.0" layoutX="930.0" layoutY="520.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/Private%20Working%20Space.png" />
+               </image></ImageView>
+            <Text layoutX="930.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Private Working Space">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Text>
+            <Text layoutX="1350.0" layoutY="550.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Private Working Space" underline="true" wrappingWidth="399.39990234375">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Text layoutX="1350.0" layoutY="790.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rp. 100,000.00" wrappingWidth="402.5999755859375">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
