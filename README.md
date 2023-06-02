@@ -7,6 +7,20 @@ This application is intended to be used for people who wants to rent out a room 
 it is a Check In, and Check Out Port made by JavaFX and Java, with the help of SceneBuilder
 it has an interface that is presentable and easy to navigate through
 ---
+## How this application works
+- First the application runs the main file, which is main.java
+- the main.java file will show the main menu scene, here you can navigate through the scenes by clicking the button
+- those buttons are controlled by the controller files, those files are:
+   - Booking Controller for booking page
+   - CheckIn Controller for check in page
+   - Controller for Main menu, Facility, Menu, and Rooms
+   - ProfileController for the Profile Page
+- Those controller has the controls for mainly navigation and to store data into the system
+- The data stored in the system is stored in a txt file, where it is stored int this format
+CID#Name#NIK#Dob#CheckinDate#CheckOutDate#RoomType#RoomNumber#TotalCharge
+- The controller inside the check in will read the data and store it in an array list
+- Check In controller will also verify the inputs of the user, making it safe for the user to log in
+---
 ## Libraries
 The libraries used in this projects are
 - JRE System Library (JavaSE - 17) (this includes java.io, java.net, java.time, and many more)
