@@ -6,7 +6,6 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.util.Random;
 import java.util.ResourceBundle;
-import java.util.Scanner;
 
 import Assets.CustomerStuff.CustomerIdentification;
 import Assets.Room.UsedRoom;
@@ -130,37 +129,65 @@ public class BookingController implements Initializable{
 	}
 	
 	public void PressButton(ActionEvent e) {
+		Name = NameText.getText();
+		ID = IDNum.getText();
+		
+		if(Name == "" || Name.contains("#")) {
+			StatusLabel.setVisible(true);
+			StatusLabel.setText("Invalid Name");
+			return;
+		}
+		if(ID == "" || ID.contains("#")) {
+			StatusLabel.setVisible(true);
+			StatusLabel.setText("Invalid ID");
+			return;
+		}
+		
+		if(Room == null) {
+			StatusLabel.setVisible(true);
+			StatusLabel.setText("Please Choose a room");
+			return;
+		}
+		
+		if(CheckIn == null) {
+			StatusLabel.setVisible(true);
+			StatusLabel.setText("Check In is invalid");
+	    	return;
+		}
+		
+		if(CheckOut == null) {
+			StatusLabel.setVisible(true);
+			StatusLabel.setText("Check Out is invalid");
+	    	return;
+		}
+		
 		Period period = Period.between(CheckIn, CheckOut);
 	    int diff = period.getDays();
-	    if(diff <= 0) {
-	    	System.out.println("Invalid Dates");
+	    System.out.println(diff);
+	    
+	    if(diff <= 0){
+			StatusLabel.setVisible(true);
+			StatusLabel.setText("Date is invalid");
+	    	return;
+	    }
+
+	    if(DOB == null) {
+			StatusLabel.setVisible(true);
+			StatusLabel.setText("Date Of Birth is invalid");
 	    	return;
 	    }
 	    
 	    LocalDate now =  LocalDate.now();
 	    Period AgePeriod = Period.between(DOB, now);
-	    int Age = AgePeriod.getYears();
+	    Integer Age = AgePeriod.getYears();
 	    System.out.println(Age);
 	    
-	    if(Age < 18) {
-	    	System.out.println("Can't Book under 18");
+	    if(Math.abs(Age) < 18) {
+			StatusLabel.setVisible(true);
+			StatusLabel.setText("Can't Book Under 18");
 	    	return;
 	    }
 	    
-		Name = NameText.getText();
-		ID = IDNum.getText();
-		
-		if(Name == null || Name.contains("#")) {
-			StatusLabel.setVisible(true);
-			StatusLabel.setText("Invalid Name");
-			return;
-		}
-		if(ID == null || ID.contains("#")) {
-			StatusLabel.setVisible(true);
-			StatusLabel.setText("Invalid ID");
-			return;
-		}
-//		
 		String CID = MakeCID(diff);
 
 		
