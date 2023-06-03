@@ -51,7 +51,7 @@
                   <Font size="31.0" />
                </font>
             </Text>
-            <DatePicker fx:id="DOBDatePicker" layoutX="500.0" layoutY="186.0" onAction="#getDate" prefHeight="41.0" prefWidth="348.0" promptText="Enter a Date" style="-fx-border-color: transparent; -fx-background-color: transparent; -fx-font-size: 20;" />
+            <DatePicker fx:id="DOBDatePicker" layoutX="500.0" layoutY="186.0" onAction="#getDate" prefHeight="41.0" prefWidth="348.0" promptText="Enter a Date" style="-fx-border-color: transparent; -fx-background-color: transparent; -fx-font-size: 20;"/>
             <Text fill="WHITE" layoutX="121.0" layoutY="448.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Date">
                <font>
                   <Font size="31.0" />
