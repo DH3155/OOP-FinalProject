@@ -56,11 +56,6 @@ public class ProfileController {
 	private Scene scene;
 	private Parent root;
 	
-//	v Update Label
-//	v Set Labels
-//	v Add item
-//	v Add Facility
-	
 	ArrayList<CustomerIdentification> files = new ArrayList<CustomerIdentification>();
 	public int TCharge;
 	public int tow;
