@@ -49,7 +49,8 @@ public class ProfileController {
 	private TextField blackberry;
 	@FXML
 	private TextField triple;
-
+	@FXML
+	private Label status; 
 	
 	
 	private Stage stage;
@@ -127,50 +128,105 @@ public class ProfileController {
 	
 	public void addPizza() {
 		String text = pizza.getText();
-		int temp = Integer.parseInt(text);
-		PepperoniPizza Order = new PepperoniPizza(temp);
-		TCharge = TCharge + Order.GetPrice();
-		TotCharge(TCharge);
+		try {
+			int temp = Integer.parseInt(text);
+			PepperoniPizza Order = new PepperoniPizza(temp);
+			TCharge = TCharge + Order.GetPrice();
+			TotCharge(TCharge);
+			status.setText("Item Added!");
+			status.setVisible(true);
+			return;
+		}catch(NumberFormatException e1){
+			status.setVisible(true);
+			status.setText("Must be a Number!");
+			return;
+		}
 	}
 	
 	public void addSpaghetti() {
 		String text = spaghetti.getText();
+	try {
 		int temp = Integer.parseInt(text);
 		SpaghettiCarbonara Order = new SpaghettiCarbonara(temp);
 		TCharge = TCharge + Order.GetPrice();
 		TotCharge(TCharge);
+		status.setText("Item Added!");
+		status.setVisible(true);
+		return;
+	}catch(NumberFormatException e1){
+		status.setVisible(true);
+		status.setText("Must be a Number!");
+		return;
+		}
 	}
 	
 	public void addBurger() {
+		
 		String text = burger.getText();
+		try{
 		int temp = Integer.parseInt(text);
 		StovetopBurger Order = new StovetopBurger(temp);
 		TCharge = TCharge + Order.GetPrice();
 		TotCharge(TCharge);
+		status.setText("Item Added!");
+		status.setVisible(true);
+		return;
+	}catch(NumberFormatException e1){
+		status.setVisible(true);
+		status.setText("Must be a Number!");
+		return;
+		}
 	}
 	
 	public void addWatermelon() {
 		String text = watermelon.getText();
+		try {
 		int temp = Integer.parseInt(text);
 		WatermelonAguaFresca Order = new WatermelonAguaFresca(temp);
 		TCharge = TCharge + Order.GetPrice();
 		TotCharge(TCharge);
+		status.setText("Item Added!");
+		status.setVisible(true);
+		return;
+	}catch(NumberFormatException e1){
+		status.setVisible(true);
+		status.setText("Must be a Number!");
+		return;
+		}
 	}
 	
 	public void addBlackberry() {
 		String text = blackberry.getText();
+	try {
 		int temp = Integer.parseInt(text);
 		BlackberryMojito Order = new BlackberryMojito(temp);
 		TCharge = TCharge + Order.GetPrice();
 		TotCharge(TCharge);
+		status.setText("Item Added!");
+		status.setVisible(true);
+		return;
+	}catch(NumberFormatException e1){
+		status.setVisible(true);
+		status.setText("Must be a Number!");
+		return;
+		}
 	}
 	
 	public void addTriple() {
 		String text = triple.getText();
+		try {
 		int temp = Integer.parseInt(text);
 		TripleBerrySparklers Order = new TripleBerrySparklers(temp);
 		TCharge = TCharge + Order.GetPrice();
 		TotCharge(TCharge);
+		status.setText("Item Added!");
+		status.setVisible(true);
+		return;
+	}catch(NumberFormatException e1){
+		status.setVisible(true);
+		status.setText("Must be a Number!");
+		return;
+		}
 	}
 	
 	public void addTowel() {

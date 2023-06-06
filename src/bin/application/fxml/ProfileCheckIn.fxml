@@ -331,5 +331,10 @@
             <Font size="31.0" />
          </font>
       </Label>
+      <Label fx:id="status" layoutX="526.0" layoutY="610.0" text="Item Added!" visible="false">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
